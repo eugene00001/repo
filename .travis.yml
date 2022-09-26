@@ -6,3 +6,5 @@ jobs:
       script: sleep 10
 keys:
   - YOUR_KEY_IDENTIFIER
+script:
+  - echo $TRAVIS_YOUR_KEY_IDENTIFIER
