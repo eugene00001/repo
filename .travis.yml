@@ -7,4 +7,4 @@ jobs:
 keys:
   - keyggg
 script:
-  - echo $keyggg
+  - echo keyggg
