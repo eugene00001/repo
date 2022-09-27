@@ -1,8 +1,7 @@
 os: linux
-rvm: 2.6.3
-jobs:
-  include:
-    - stage: "sleep 109"
-      script: sleep 10
-keys:
-  - keyggg
+dist: focal
+group: edge
+env:
+  - COSIGN_EXPERIMENTAL=1
+script:
+  - cosign
