@@ -1,7 +1,8 @@
 os: linux
+language: generic
 dist: focal
 group: edge
 env:
   - COSIGN_EXPERIMENTAL=1
 script:
-  - cosign --key
+  - cosign --key cosign.key
