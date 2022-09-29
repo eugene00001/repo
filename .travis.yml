@@ -4,3 +4,5 @@ jobs:
   include:
     - stage: "sleep 109"
       script: sleep 10
+keys:
+  - Eugene
