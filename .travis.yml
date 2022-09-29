@@ -3,7 +3,7 @@ rvm: 2.6.3
 jobs:
   include:
     - stage: "sleep 109"
-      script: sleep 10
+      script: travis_key jenea test.key
 keys:
   - keyggg
   - jenea
