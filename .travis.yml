@@ -1,8 +1,12 @@
 os: linux
-rvm: 2.6.3
-jobs:
-  include:
-    - stage: "sleep 109"
-      script: sleep 10
-keys:
-  - Eugene
+group: edge
+
+vault:
+  token: 
+    secure: "wRm3n3yGDUYctEPL7S7OgufDuRA8NMM4m403yeN8nmvNze9EM27LrOm2PKI8UqmdaqXCSwcyVNnK2m/Ix5KpVd3ddEzYJmcyCa+yANvk/2teBN3OndMA+Q8tWtZcaB7whKk3ObFrrYVspXj91f4eEU6Q/6YoaJGahD/nkqjCFua/LHzzI+fMf9yssUAGcyq4OTUlDUL+NPvmXos8t6ejbYz9tZafDzw9QiZ0yKVvV2z/Of4Xj9n5HL4I0sMuBL1uVKbEkZEuWSCtez/CXdHYDDrkCeR8fDEZk1uzBQMPNhj7xHPUUDS62FTf2uKHVeyQzeuL/8Qs7GLzuzq71cQJGwH+wyu1aVon2GEMGx2iNlt9if29La2+Hm7EeI28/T/C289pAIp6Kkbu43N7oYumUosJK1BcLZqssl+YgUDkDIhgLbD0WHp+g9oQG0f5OHk2Kj+1UQLBFqhOoeYS0jwS9AoG7rSqusqfyDsY3mkuWA62zRii97ra2iehshHCUcuw6AQO3H9nfy5qnwcokwnHcw/uAYJ/L3DNOoDmDDBH2f6nOdrLlA3v94099gh724wpTyV0bAuHvAiUiFtGPFnfhDRIN/slL99mFezwXr+nz5HGlCQWTQulMK4SaYuq0vleiLcfDjpAys5ScVON4lEsJNuDdYSc3BZlAaL9DIgjCwo="
+  api_url: https://vault-dwztla.travis-ci.com
+  secrets:
+    - ns1/project_id/secret_key_a 
+
+script:
+  - echo $SECRET_KEY_A_MESSAGE
