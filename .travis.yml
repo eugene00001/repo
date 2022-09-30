@@ -8,4 +8,4 @@ vault:
   api_url: https://vault-dwztla.travis-ci.com
 
 script:
-  - cosign sign --key hashivault://ns1/project_id/secret_key_a/message eugene00001/repo
+  - cosign sign --key hashivault://test-cosign eugene00001/repo
