@@ -9,4 +9,4 @@ vault:
     - ns1/project_id/secret_key_a 
 
 script:
-  - echo $SECRET_KEY_A_MESSAGE
+  - echo $SECRET_KEY_A_MESSAGE | hd
